@@ -7,7 +7,7 @@ back end, translating the data stream in both directions in real time.
 
 ```
 ┌──────────────┐  TN5250   ┌──────────────────────────────┐  TN3270(E)  ┌───────────┐
-│ 5250 client  │◄────────►│ tn5250to3270:                │◄──────────►│ z/OS host │
+│ 5250 client  │◄─────────►│ tn5250to3270:                │◄───────────►│ z/OS host │
 │ ACS, tn5250j │  plain    │  5250 srv ↔ Screen ↔ 3270 cli│  TLS|plain  │ TSO, CICS │
 └──────────────┘           └──────────────────────────────┘             └───────────┘
 ```
