@@ -1,0 +1,25 @@
+[project]
+name = "tn5250to3270"
+version = "0.1.0"
+description = "TN5250-to-TN3270 protocol-translating proxy: accept IBM i 5250 terminal clients, speak 3270 to a z/OS host."
+authors = [{name = "Garland Glessner", email = "gglessner@gmail.com"}]
+license = "GPL-3.0-or-later"
+requires-python = ">=3.11"
+dependencies = ["pyyaml>=6.0"]
+
+[project.urls]
+Homepage = "https://github.com/gglessner/tn5250to3270"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-cov>=5.0"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["tn5250to3270*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"

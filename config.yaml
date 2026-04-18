@@ -1,0 +1,27 @@
+listen:
+  host: 127.0.0.1
+  port: 2323
+
+upstream:
+  host: 10.0.0.207
+  port: 3270
+  tls:
+    enabled: false
+  connect_timeout: 10.0
+  negotiate_timeout: 10.0
+
+ebcdic:
+  codepage: cp037
+
+geometry:
+  IBM-3477-FC:  [IBM-3278-5-E, 27, 132]
+  IBM-3477-FG:  [IBM-3278-5-E, 27, 132]
+  IBM-3180-2:   [IBM-3278-5-E, 27, 132]
+  IBM-3179-2:   [IBM-3278-2-E, 24, 80]
+  IBM-3196-A1:  [IBM-3278-2-E, 24, 80]
+  IBM-5251-11:  [IBM-3278-2,   24, 80]
+  IBM-5291-1:   [IBM-3278-2,   24, 80]
+
+logging:
+  level: DEBUG
+  format: text
